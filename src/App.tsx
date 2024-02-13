@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import ToggleText from "./components/ToggleText";
+import Clicker from "./components/Clicker";
+import Counter from "./components/Counter";
+import CounterWithStep from "./components/CounterWithStep";
+import TextFieldForm from "./components/TextFieldForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Clicker/>
+      <Counter/>
+      <CounterWithStep/>
+      <TextFieldForm/>
+      <ToggleText/>
     </div>
   );
 }
